@@ -250,6 +250,12 @@ article.active {
   padding-bottom: 30px;
 }
 
+.orTitle {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
 .article-title::after {
   content: "";
   position: absolute;
