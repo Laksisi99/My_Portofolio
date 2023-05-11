@@ -137,6 +137,7 @@ button {
   border: none;
   text-align: left;
   cursor: pointer;
+  color: #080101;
 }
 
 input, textarea {
@@ -1004,8 +1005,10 @@ main {
 .project-item-icon-box {
   --scale: 0.8;
 
-  background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  width: 250px;
+  height: 250px;
+  background: rgb(135, 166, 185);
+  color: rgb(9, 5, 90);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1101,7 +1104,7 @@ main {
 
 .popup h6{
   margin-top: 30px;
-  color: hsl(248, 83%, 36%);
+  color: hsl(248, 27%, 94%);
   font-size: 15px;
   font-weight: bold;
 }
@@ -1956,4 +1959,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+.footer{
+  background-color: #333;
+  color: azure;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 30px 200px;
 }
