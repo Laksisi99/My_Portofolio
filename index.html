@@ -191,9 +191,9 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link href="CV/Laksisi Gunaratne CV.pdf">CV</button>
-          </li>
+          <a href="CV/Laksisi Gunaratne CV.pdf"><li class="navbar-item">
+            <button class="navbar-link" data-nav-link >CV</button>
+          </li></a>
 
           
 
@@ -641,6 +641,9 @@
 
           <ul class="filter-list">
             
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
 
             <li class="filter-item">
               <button class="active" data-filter-btn>Academical Projects</button>
@@ -675,6 +678,10 @@
             <ul class="select-list">
 
               <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
                 <button data-select-item>Academical Projects</button>
               </li>
 
@@ -701,7 +708,12 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                      <div class="popup" id="popup">
+                        <h6>This is a application which is use to store library records automatically. There are two parts of the system which are one for librarians and one for students.</h6>
+                        <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/RFID-based-Library-System')">View More</button>
+            
+                      </div>
                   </div>
 
                   <img src="./assets/images/smartLibrary .jpg" alt="Library" loading="lazy">
@@ -709,7 +721,7 @@
 
                 <h3 class="project-title">RFID Based Library System</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Java, MySQL, RFID Technology</p>
 
               </a>
             </li>
@@ -719,7 +731,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>A smart grocery system which is most useful for cashiers. Inspired by keels nexus system.</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/smart_grocery_system')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/smartGrocery.jpg" alt="Grocery" loading="lazy">
@@ -727,7 +743,7 @@
 
                 <h3 class="project-title">Smart Grocery System</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Java,MySQL</p>
 
               </a>
             </li>
@@ -1097,11 +1113,11 @@
         - #BLOG
       -->
 
-      <article class="cv" data-page="cv">
+      <!-- <article class="cv" data-page="cv" >
 
         <header>
           <h2 class="h2 article-title">My CV</h2>
-        </header>
+        </header> -->
 
         
         <!-- <section class="blog-posts">

@@ -157,3 +157,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+let popup = document.getElementById("popup");
+
+function openProject(){
+
+  popup.classList.add("open-project");
+
+}
+
+function closeProject(){
+
+  popup.classList.remove("open-project");
+
+}
