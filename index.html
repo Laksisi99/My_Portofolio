@@ -15,7 +15,6 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
     - google font link
@@ -23,6 +22,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
@@ -221,6 +225,29 @@
             I would prefer to continue studying, push myself, 
             and engage in interesting projects to also develop human skills.            
           </p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
 
@@ -708,12 +735,12 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
-                      <div class="popup" id="popup">
+                    <button type="button" class="proj-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" ><ion-icon name="eye-outline"></ion-icon></button>
+                      
                         <h6>This is a application which is use to store library records automatically. There are two parts of the system which are one for librarians and one for students.</h6>
                         <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/RFID-based-Library-System')">View More</button>
             
-                      </div>
+                     
                   </div>
 
                   <img src="./assets/images/smartLibrary .jpg" alt="Library" loading="lazy">
@@ -753,7 +780,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>Simple Social Media Website created which is similar to Facebook</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/Friendlance')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/Friendlance.jpg" alt="Friendlance" loading="lazy">
@@ -761,7 +792,7 @@
 
                 <h3 class="project-title">Friendlance</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">PHP,HTML,CSS,MySQL</p>
 
               </a>
             </li>
@@ -771,7 +802,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>Simple learning website for programming beginners.</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/FreshDev')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/freshDev.jpg" alt="freshDev" loading="lazy">
@@ -779,7 +814,7 @@
 
                 <h3 class="project-title">FreshDev Website</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">React.Js,CSS</p>
 
               </a>
             </li>
@@ -789,7 +824,12 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>This was a group project.This is a web application for the management of a veterinary clinic which allows the vet clinic staff to manage,
+                        I contributed to this project by doing the frontend part in the admin site</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/FreshDev')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/petVet.jpg" alt="petvet" loading="lazy">
@@ -797,7 +837,7 @@
 
                 <h3 class="project-title">petVet Admin Site</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">React,Tailwind CSS,MongoDB</p>
 
               </a>
             </li>
@@ -807,7 +847,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>This was a group project.This is a social media dashboard application, it allows users to monitor their social media accounts and analytics, schedule posts, and manage their social media presence.I contributed to this project by doing the frontend part.</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/PHP-Dashboard-Design')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/EventsWave.jpg" alt="EventsWave" loading="lazy">
@@ -815,7 +859,7 @@
 
                 <h3 class="project-title">EventsWave Admin Panel</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">PHP,Bootstap,MySQL</p>
 
               </a>
             </li>
@@ -827,7 +871,11 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <button type="submit" class="proj-btn" onclick="openProject()"><ion-icon name="eye-outline"></ion-icon></button>
+                    <div class="popup_1" id="popup_1">
+                      <h6>Simple chrome extension which can use for save URL s of current tab also user can enter URL s and save, It can be deleted by user as well</h6>
+                      <button  class="btn btn-success" onclick=" window.open('https://github.com/Laksisi99/Tab_Saver')">View More</button>
+                    </div>
                   </div>
 
                   <img src="./assets/images/tabSaver.JPG" alt="tabSaver" loading="lazy">
@@ -835,7 +883,7 @@
 
                 <h3 class="project-title">TabSaver</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">JavaScript,HTML,CSS</p>
 
               </a>
             </li>
@@ -849,9 +897,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/DevBoost.JPG" alt="DevBoost" loading="lazy">
                 </figure>
@@ -868,9 +914,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/GetSync.jpg" alt="isiwarana" loading="lazy">
                 </figure>
@@ -887,9 +931,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/WIE.jpg" alt="innovatio" loading="lazy">
                 </figure>
@@ -907,9 +949,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                 
 
                   <img src="./assets/images/X-sum.JPG" alt="x-sum" loading="lazy">
                 </figure>
@@ -926,9 +966,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                 
 
                   <img src="./assets/images/inspiHER.JPG" alt="inspiHER" loading="lazy">
                 </figure>
@@ -946,9 +984,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/orator.JPG" alt="orator" loading="lazy">
                 </figure>
@@ -966,10 +1002,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  
                   <img src="./assets/images/incode-X.JPG" alt="incode-X" loading="lazy">
                 </figure>
 
@@ -985,9 +1018,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/abstract.JPG" alt="abstract spot" loading="lazy">
                 </figure>
@@ -1005,9 +1036,7 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  
 
                   <img src="./assets/images/idorayata.JPG" alt="idorayata poda wassak" loading="lazy">
                 </figure>
@@ -1327,6 +1356,24 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <div id="model_1"><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div></div>
 
 </body>
 
